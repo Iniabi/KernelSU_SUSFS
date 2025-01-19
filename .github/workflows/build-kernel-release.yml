@@ -43,14 +43,6 @@ jobs:
         Non-Official Managers:
         -> https://github.com/rifsxd/KernelSU-Next
 
-        Special thanks to the following people for their contributions!
-        This helps me alot! <3
-
-        simonpunk - Created SUSFS!
-        sidex15 - Created module!
-        backslashxx - Helped with patches!
-        幕落 - Donation!
-
     steps:
       # Checkout the code
       - name: Checkout code
