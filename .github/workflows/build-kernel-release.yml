@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
         - build-kernel-a13-5-15-ksu
-    if: ${{ inputs.make_release == 'true' }}
+    if: ${{ inputs.make_release }}
     env:
       REPO_OWNER: Iniabi
       REPO_NAME: KernelSU_SUSFS
