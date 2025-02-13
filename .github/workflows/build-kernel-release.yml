@@ -19,7 +19,7 @@ on:
         default: false
 
 jobs:
-  build-kernel-a13-5-15:
+  build-kernel-a13-5-15-ksu:
     uses: ./.github/workflows/build-kernel-a13-5.15.yml
     secrets: inherit
     if: ${{ inputs.build_a13 }}
@@ -37,12 +37,10 @@ jobs:
       RELEASE_NOTES: |
         This release contains KernelSU Next and SUSFS v1.5.4
         
-        Module: 
-        -> https://github.com/sidex15/ksu_module_susfs
+        Module: https://github.com/sidex15/ksu_module_susfs
         
-        Non-Official Managers:
-        -> https://github.com/rifsxd/KernelSU-Next
-
+        Official Managers: https://github.com/tiann/KernelSU
+        
     steps:
       # Checkout the code
       - name: Checkout code
