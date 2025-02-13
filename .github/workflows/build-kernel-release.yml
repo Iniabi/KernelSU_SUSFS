@@ -20,7 +20,7 @@ on:
 
 jobs:
   build-kernel-a13-5-15-ksu:
-    uses: ./.github/workflows/build-kernel-a13-5.15.yml
+    uses: ./.github/workflows/build-kernel-a13-5.15-ksu.yml
     secrets: inherit
     if: ${{ inputs.build_a13 }}
 
